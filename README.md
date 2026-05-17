@@ -1,7 +1,7 @@
 # 【NeurCom'2024 :fire:】An empirical study of excitation and aggregation design adaptions in CLIP4Clip for video–text retrieval
 
 <p align="center">
-    <a href="https://doi.org/10.1016/j.neucom.2024.127905"><img src="https://img.shields.io/badge/NeurCom-2023-yellow.svg" alt="Build Status"></a>
+    <a href="https://doi.org/10.1016/j.neucom.2024.127905"><img src="https://img.shields.io/badge/NeurCom-2024-yellow.svg" alt="Build Status"></a>
     <a href="https://arxiv.org/abs/2406.01604"><img src="https://img.shields.io/badge/Paper-arxiv.2406.01604-b31b1b.svg" alt="Build Status"></a>
 </p>
 
