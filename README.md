@@ -68,7 +68,7 @@ wget -P ./modules https://openaipublic.azureedge.net/clip/models/5806e77cd80f8b5
 python preprocess/compress_video.py --input_root [raw_video_path] --output_root [compressed_video_path]
 ```
 
-### Train on MSRVTT (Squeeze Excitation-and-Aggregation)
+### Train on MSRVTT (Squeeze Excitation-and-Aggregation v.s. CLIP4Clip-meanP)
 ```bash
 python -m torch.distributed.launch --nproc_per_node=4 --master_port='29505' \
 main_task_retrieval.py --do_train --num_thread_reader=0 \
@@ -89,7 +89,7 @@ main_task_retrieval.py --do_train --num_thread_reader=0 \
 --pretrained_clip_name ViT-B/32
 ```
 
-### Train on MSRVTT (Expansion Aggregation)
+### Train on MSRVTT (Expansion Aggregation v.s. CLIP4Clip-seqLSTM)
 ```bash
 python -m torch.distributed.launch --nproc_per_node=4 --master_port='29506' \
 main_task_retrieval.py --do_train --num_thread_reader=0 \
@@ -110,7 +110,7 @@ main_task_retrieval.py --do_train --num_thread_reader=0 \
 --pretrained_clip_name ViT-B/32
 ```
 
-### Train on MSRVTT (Expansion Aggregation)
+### Train on MSRVTT (Expansion Aggregation v.s. CLIP4Clip-seqTransf)
 ```bash
 python -m torch.distributed.launch --nproc_per_node=4 --master_port='29507' \
 main_task_retrieval.py --do_train --num_thread_reader=0 \
@@ -131,7 +131,7 @@ main_task_retrieval.py --do_train --num_thread_reader=0 \
 --pretrained_clip_name ViT-B/32
 ```
 
-### Train on MSRVTT (Squeeze Excitation)
+### Train on MSRVTT (Squeeze Excitation v.s. CLIP4Clip-tightTransf)
 ```bash
 python -m torch.distributed.launch --nproc_per_node=4 --master_port='29508' \
 main_task_retrieval.py --do_train --num_thread_reader=0 \
