@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>An empirical study of excitation and aggregation design adaptions in CLIP4Clip for video-text retrieval</title>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">An empirical study of excitation and aggregation design adaptions in CLIP4Clip for video-text retrieval</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Xiaolun Jing<sup>1,2</sup>, </span>
+            <span class="author-block">Genke Yang<sup>1,2 *</sup>, </span>
+            <span class="author-block">Jian Chu<sup>1,2</sup>, </span>
+          </div>
+
+          <div class="is-size-8 publication-authors">
+            <span class="author-block"><sup>1</sup>Ningbo Artificial Intelligence Institute, Shanghai Jiao Tong University, China </span>
+            <span class="author-block"><sup>2</sup>Department of Automation, Shanghai Jiao Tong University, China </span> <br />
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2406.01604.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/JingXiaolun/EA-clip4Clip"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/teaser.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
+        free-viewpoint
+        portraits.
+      </h2>
+    </div>
+  </div>
+</section> -->
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+         CLIP4Clip model transferred from the CLIP has been the de-factor standard to solve the video clip retrieval task
+from frame-level input, triggering the surge of CLIP4Clip-based models in the video–text retrieval domain. In
+this work, we rethink the inherent limitation of widely-used mean pooling operation in the frame features
+aggregation and investigate the adaptions of excitation and aggregation design for discriminative video
+representation generation. We present a novel excitation-and-aggregation design, including (1) The excitation
+module is available for capturing non-mutually-exclusive relationships among frame features and achieving
+frame-wise features recalibration, and (2) The aggregation module is applied to learn exclusiveness used for
+frame representations aggregation. Similarly, we employ the cascade of sequential module and aggregation
+design to generate discriminative video representation in the sequential type. Besides, we adopt the excitation
+design in the tight type to obtain representative frame features for multi-modal interaction. The proposed
+modules are evaluated on three benchmark datasets of MSR-VTT, ActivityNet and DiDeMo, achieving MSRVTT (43.9 R@1), ActivityNet (44.1 R@1) and DiDeMo (31.0 R@1). They outperform the CLIP4Clip results
+by +1.2% (+0.5%), +4.5% (+1.9%) and +9.5% (+2.7%) relative (absolute) improvements, demonstrating the
+superiority of our proposed excitation and aggregation designs. We hope our work will serve as an alternative
+for frame representations aggregation and facilitate future research. 
+         </p>
+        </div>
+        <img src="./static/images/main_structure.png"
+                class="abstract-image"
+                alt="Interpolate start reference image."/>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+
+        <h2 class="title is-3">Excitation-and-Aggregation</h2>
+
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-15 has-text-centered">
+            <img src="./static/images/squeeze_excitation_and_aggregation.jpg"
+                class="abstract-image"
+                alt="Interpolate start reference image."/>
+            <p>Squeeze</p>
+          </div>
+        </div>
+        <br/>
+
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-15 has-text-centered">
+            <img src="./static/images/expansion_excitation_and_aggregation.png"
+                class="abstract-image"
+                alt="Interpolate start reference image."/>
+            <p>Expansion</p>
+          </div>
+        </div>
+        <br/>
+
+        <h2 class="title is-3">Aggregation</h2>
+        
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-15 has-text-centered">
+            <img src="./static/images/squeeze_and_expansion_aggregation.png"
+                class="abstract-image"
+                alt="Interpolate start reference image."/>
+            <p>Squeeze and Expansion</p>
+          </div>
+        </div>
+        <br/>
+
+        <h2 class="title is-3">Excitation</h2>
+        
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-15 has-text-centered">
+            <img src="./static/images/squeeze_and_expansion_excitation.png"
+                class="abstract-image"
+                alt="Interpolate start reference image."/>
+            <p>Squeeze and Expansion</p>
+          </div>
+        </div>
+        <br/>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            The source code is based on the <a href="https://nerfies.github.io/">Nerfies</a> project page. We thank the authors for creating and opening it.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
